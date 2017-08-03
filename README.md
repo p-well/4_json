@@ -6,13 +6,14 @@
 
 Запускаем код выполнив в командной строке:
 
-python pprint_json.py -p <путь к файлу> , либо
-python pprint_json.py --page <путь к файлу>
+"""python pprint_json.py -p <путь к файлу> , либо
+python pprint_json.py --page <путь к файлу> """
 
 Путь указывается без угловых скобок или кавычек
 
 # Пример вывода
 
+"""
 [
     {
         "Cells": {
@@ -72,7 +73,7 @@ python pprint_json.py --page <путь к файлу>
         "Number": 1
     }
 ]
-
+"""
 
 # Project Goals
 
