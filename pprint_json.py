@@ -10,8 +10,8 @@ def load_data(filepath):
     else:
         return None
 
-def pretty_print_json(data):
-    print(json.dumps(data, indent=4, ensure_ascii=False))
+def pretty_print_json(file_to_serialize):
+    print(json.dumps(file_to_serialize, indent=4, ensure_ascii=False))
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description = 'Getting pretty json')
