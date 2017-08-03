@@ -2,11 +2,13 @@ import json
 import os
 import argparse
 from pprint import pprint
+import sys
+
 
 def load_data(filepath):
     if os.path.isfile(filepath): 
         with open(filepath, 'r', encoding='utf-8') as raw_json_file:
-            raw_json_file_text = json.loads(raw_json_file)
+            raw_json_file_text = json.load(raw_json_file)
             return raw_json_file_text
             #pprint(raw_json_file_text)
     else:
@@ -20,7 +22,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description = 'Getting pretty json')
     parser.add_argument('-p', '--path', required = True, default = os.getcwd(),        
                         help = 'Enter path to json file after flag -p or --path')
-    namespace = parser.parse_args()
+    namespace = parser.parse_args(sys.argv[1:])
 
     if namespace.path:
         pretty_print_json(load_data(namespace.path))
