@@ -1,21 +1,24 @@
-# Получение json данных в красивом виде по аналогии с pprint
+# Prettify JSON Data
 
-Принимается неотформатированный json-файл и приводится к более читабельному виду. 
+The purpose if this program is to obtain pretty view of JSON file.
+The program takes path to file with JSON as an argument and then prints 
+prettified content
 
-# Как запустить
+# Quickstart
 
-Запускаем код выполнив в командной строке:
+To run program use the following commands in CLI:
 
 ```
-python pprint_json.py -p <путь к файлу> 
+python pprint_json.py -p <filepath> 
 
-или
+or
 
-python pprint_json.py --page <путь к файлу>
+python pprint_json.py --page <filepath>
 ```
-Путь указывается без угловых скобок или кавычек
+Herein filepath is the required named agrument. 
+Specify path to file after flag -p or flag --path
 
-# Пример вывода
+# Example of script launch
 
 ```
 [
@@ -79,6 +82,6 @@ python pprint_json.py --page <путь к файлу>
 ]
 ```
 
-# Цели проекта
+# Project Goals
 
-Код создан в учебных целях. В рамках учебного курса по веб-разработке ― [DEVMAN.org](https://devman.org)
+The code is written for educational purposes. Training course for web-developers -[DEVMAN.org](https://devman.org)
