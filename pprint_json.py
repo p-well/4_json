@@ -16,12 +16,9 @@ def pretty_print_json(data):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description = 'Getting pretty json')
-    parser.add_argument('-p', '--path', required = True, default = os.getcwd(),        
+    parser.add_argument('-p', '--path', required = True,        
                         help = 'Enter path to json file after flag -p or --path')
     namespace = parser.parse_args()
 
     if namespace.path:
         pretty_print_json(load_data(namespace.path))
-
-
-
