@@ -2,7 +2,6 @@ import json
 import os
 import argparse
 
-
 def load_data(filepath):
     if os.path.isfile(filepath): 
         with open(filepath, 'r', encoding='utf-8') as raw_json_file:
