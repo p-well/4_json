@@ -7,9 +7,11 @@
 Запускаем код выполнив в командной строке:
 
 ```
-python pprint_json.py -p <путь к файлу> , либо
-python pprint_json.py --page <путь к файлу>
+python pprint_json.py -p <путь к файлу> 
 
+или
+
+python pprint_json.py --page <путь к файлу>
 ```
 Путь указывается без угловых скобок или кавычек
 
